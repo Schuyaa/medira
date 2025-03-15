@@ -1,0 +1,93 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh); /* 19 + 10 пикселей типо */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #171717;
+  color: #D9D9D9;
+  line-height: 1.5;
+}
+
+.first_page{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+canvas {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.first_page_main_content{
+  
+}
+
+.first_page_title{
+  font-weight: 300;
+  font-size: calc(var(--index)*3);
+  letter-spacing: calc(var(--index)*0.2);
+  text-transform: uppercase;
+}
+/*
+.first_page_subtitle{
+  font-weight: 300;
+  font-size: calc(var(--index)*1);
+  letter-spacing: calc(var(--index)*0.1);
+}
+*/
+.first_page_main_button{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: calc(var(--index)*0.8);
+  letter-spacing: calc(var(--index)*0.1);
+  margin-top: 10%;
+  color:#D9D9D9;
+  background-color:#171717;
+  border: calc(var(--index)*0.05) solid #D9D9D9;
+  border-radius: calc(var(--index)*0.3);
+  width: calc(var(--index)*4);
+  height: calc(var(--index)*1.5);
+  margin: auto;
+  margin-top: 2vh;
+
+  transition: all 0.2s ease;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first_page_main_button:hover{
+  color:#171717;
+  background-color:#D9D9D9;
+}
+
+.second_page {
+  width: 100%;
+  height: 100vh;
+}
