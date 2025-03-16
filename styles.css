@@ -177,9 +177,21 @@ canvas {
   height: 100%;
 }
 
+.second_page_subtitle{
+  height: 15%;
+  font-size: calc(var(--index)*0.6);
+  letter-spacing: calc(var(--index)*0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F6EFBA;
+}
+
 .second_page_title{
-  height: 25%;
+  height: 10%;
   font-size: calc(var(--index)*1);
+  letter-spacing: calc(var(--index)*0.05);
   display: flex;
   justify-content: center;
   align-items: center;
