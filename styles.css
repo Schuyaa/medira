@@ -27,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .header{
@@ -101,12 +102,12 @@ body {
 }
 
 canvas {
-  position: absolute;
-  z-index: -1;
+  z-index: -100;
   width: 100%;
   height: 100vh;
   background-position: center center;
   background-size: cover;
+  position: fixed;
 }
 
 
@@ -242,4 +243,21 @@ canvas {
 
 .about_medira_text:hover{
   color: #F6EFBA;
+}
+
+.third_page{
+  height: 100vh;
+  width: 100%;
+  background-color: #171717;
+}
+
+.footer_first{
+  height: 100vh;
+  width: 100%;
+}
+
+.footer_second{
+  height: 65vh;
+  width: 100%;
+  background-color: #171717;
 }
