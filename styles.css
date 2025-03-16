@@ -206,7 +206,7 @@ canvas {
   justify-content: space-between;
 }
 
-.about_medira{
+.about_metida{
   width: 30%;
   height: 100%;
   display: flex;
@@ -216,7 +216,7 @@ canvas {
   flex-direction: column;
 }
 
-.about_medira_logo{
+.about_metida_logo{
   height: calc(var(--index)*8);
   width: calc(var(--index)*8);
   border-radius: calc(var(--index)*0.4);
@@ -227,7 +227,7 @@ canvas {
   cursor: pointer;
 }
 
-.about_medira_text{
+.about_metida_text{
   
   color: #171717;
   display: flex;
@@ -241,7 +241,7 @@ canvas {
   transition: all 0.2s linear;
 }
 
-.about_medira_text:hover{
+.about_metida_text:hover{
   color: #F6EFBA;
 }
 
