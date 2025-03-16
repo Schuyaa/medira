@@ -22,7 +22,7 @@ const createParticle = () => {
     do {
         x = r(w);
         y = r(h - h/10) + h/10;
-    } while (distance(x, y, mouseX, mouseY) < FORCE_DISTANCE * 3); // Генерируем, пока частица не окажется за зоной мыши
+    } while (distance(x, y, mouseX, mouseY) < FORCE_DISTANCE * 3.5); // Генерируем, пока частица не окажется за зоной мыши
 
     return {
         x, y,
