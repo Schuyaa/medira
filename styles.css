@@ -186,12 +186,12 @@ canvas {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #F6EFBA;
+  color: #171717;
 }
 
 .second_page_title{
   height: 10%;
-  font-size: calc(var(--index)*1);
+  font-size: calc(var(--index)*1.2);
   letter-spacing: calc(var(--index)*0.05);
   display: flex;
   justify-content: center;
@@ -248,7 +248,97 @@ canvas {
 .third_page{
   height: 100vh;
   width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+}
+
+.third_page_main_content{
+  margin-left: 10vw;
+  height: 50%;
+  width: 40vw;
+  
+}
+
+.third_page_title{
+  font-size: calc(var(--index)*1.2);
+  letter-spacing: calc(var(--index)*0.05);
+  height: 20%;
+  width: 100%;
+  color: #F6EFBA;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.third_page_text{
+  width: 100%;
+  height: 80%;
+  font-size: calc(var(--index)*0.8);
+  letter-spacing: calc(var(--index)*0.04);
+  color: #D9D9D9;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+.globe{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.run_line{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 46vh;
+  background-color: #D9D9D9;
+  color: #171717;
+}
+
+.line_title{
+  font-weight: bold;
+  font-size: calc(var(--index)*1.2);
+  width: 100%;
+  height: 10%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.run_line_content{
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3vw;
+  height: 40%;
+  font-size: calc(var(--index)*3);
+}
+
+.line_text{
+  font-size: calc(var(--index)*0.8);
+}
+
+.TOCHKA{
+  width: calc(var(--index)*0.4);
+  height: calc(var(--index)*0.4);
+  border-radius: 100;
   background-color: #171717;
+  border-radius: 100%;
 }
 
 .footer_first{
