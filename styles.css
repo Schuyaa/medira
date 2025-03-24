@@ -386,21 +386,23 @@ canvas {
 }
 
 .aboba_media1{
+  display: flex;
+  align-items: center;
   height: 80%;
   width: 30%;
 }
 
 .aboba_media_inner1{
   background-color: #D9D9D9;
-  width: 50%;
-  height: 100%;
+  width: calc(var(--index)*6);
+  height: calc(var(--index)*6);
   border-radius: calc(var(--index)*0.3);
 }
 
 .aboba_media2{
   display: flex;
   justify-content: right;
-  align-items: right;
+  align-items: center;
   text-align: right;
   height: 80%;
   width: 30%;
@@ -408,21 +410,22 @@ canvas {
 
 .aboba_media_inner2{
   background-color: #D9D9D9;
-  width: 50%;
-  height: 100%;
+  width: calc(var(--index)*6);
+  height: calc(var(--index)*6);
   border-radius: calc(var(--index)*0.3);
 }
 
 .aboba_media3{
-  
+  display: flex;
+  align-items: center;
   height: 80%;
   width: 30%;
 }
 
 .aboba_media_inner3{
   background-color: #D9D9D9;
-  width: 50%;
-  height: 100%;
+  width: calc(var(--index)*6);
+  height: calc(var(--index)*6);
   border-radius: calc(var(--index)*0.3);
 }
 
@@ -468,11 +471,11 @@ canvas {
 
 .mapa{
   width: 30%;
-  height: 100%;
 }
 
 iframe{
   border-radius: calc(var(--index)*0.3);
+  height: calc(var(--index)*10);
 }
 
 .footer_second{
@@ -569,7 +572,12 @@ iframe{
 
 form{
   width: 100%;
-  height: 80%;
+  height: calc(var(--index)*8);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .form_block{
@@ -580,7 +588,7 @@ form{
 input {
   font-size: calc(var(--index)*0.6);
   letter-spacing: calc(var(--index)*0.1);
-  height: 8vh;
+  height: calc(var(--index)*2);
   width: 100%;
   background: transparent;
   color: #F6EFBA;
@@ -615,15 +623,14 @@ input:focus::placeholder {
   font-weight: 300;
   font-size: calc(var(--index)*0.7);
   letter-spacing: calc(var(--index)*0.1);
-  margin-top: 10%;
+
   color: #D9D9D9;
   background-color:#171717;
   border: calc(var(--index)*0.05) solid #D9D9D9;
   border-radius: calc(var(--index)*0.3);
   width: calc(var(--index)*4);
   height: calc(var(--index)*1.5);
-  margin: auto;
-  margin-top: 5vh;
+  margin-top: 2vh;
 
   transition: all 0.2s linear;
 
