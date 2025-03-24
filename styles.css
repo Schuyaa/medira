@@ -479,7 +479,7 @@ iframe{
 }
 
 .footer_second{
-  height: 65vh;
+  height: calc(var(--index)*15);
   background-color: #171717;
   display: flex;
   justify-content: center;
@@ -619,21 +619,19 @@ input:focus::placeholder {
 }
 
 .form_button{
+  all: unset;
   text-transform: uppercase;
   font-weight: 300;
   font-size: calc(var(--index)*0.7);
   letter-spacing: calc(var(--index)*0.1);
 
   color: #D9D9D9;
-  background-color:#171717;
-  border: calc(var(--index)*0.05) solid #D9D9D9;
-  border-radius: calc(var(--index)*0.3);
   width: calc(var(--index)*4);
   height: calc(var(--index)*1.5);
   margin-top: 2vh;
 
   transition: all 0.2s linear;
-
+  background: none;
   cursor: pointer;
   user-select: none;
 
@@ -644,6 +642,5 @@ input:focus::placeholder {
 }
 
 .form_button:hover{
-  color:#171717;
-  background-color:#F6EFBA;
+  color:#F6EFBA;
 }
