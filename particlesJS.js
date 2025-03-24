@@ -27,7 +27,7 @@ const createParticle = () => {
     return {
         x, y,
         angle: r(TAU),
-        speed: r(0.0025), // Уменьшенная скорость
+        speed: r(0.0025), 
         normalSpeed: r(0.0025),
         oscAmplitudeX: r(1),
         oscSpeedX: 0.00025 + r(0.002),
@@ -46,19 +46,19 @@ const update = () => {
         p1.speed = lerp(p1.speed, p1.normalSpeed * RESOLUTION, 0.1);
 
         if (p1.x > w) {
-          p1.x = w - 0.1; // Плавно отталкиваем от правого края
-          p1.angle = PI - p1.angle; // Отражаем угол
+          p1.x = w - 0.1; 
+          p1.angle = PI - p1.angle; 
       } else if (p1.x < 0) {
-          p1.x = 0.1; // Плавно отталкиваем от левого края
-          p1.angle = PI - p1.angle; // Отражаем угол
+          p1.x = 0.1; 
+          p1.angle = PI - p1.angle; 
       }
       
       if (p1.y > h) {
-          p1.y = h - 0.1; // Плавно отталкиваем от нижнего края
-          p1.angle = -p1.angle; // Отражаем угол
+          p1.y = h - 0.1; 
+          p1.angle = -p1.angle; 
       } else if (p1.y < 0) {
-          p1.y = 0.1; // Плавно отталкиваем от верхнего края
-          p1.angle = -p1.angle; // Отражаем угол
+          p1.y = 0.1; 
+          p1.angle = -p1.angle; 
       }
 
         if (r() < 0.005) p1.oscAmplitudeX = r(2);
@@ -74,7 +74,7 @@ const update = () => {
 const render = () => {
     ctx.clearRect(0, 0, w, h);
     ctx.globalAlpha = 1;
-    ctx.fillStyle = "#171717"; // Чёрный фон
+    ctx.fillStyle = "#171717"; 
     ctx.fillRect(0, 0, w, h);
 
     particles.forEach(p1 => {
@@ -93,8 +93,8 @@ const render = () => {
                 ctx.globalAlpha = line.opacity;
                 ctx.moveTo(line.p1.x, line.p1.y);
                 ctx.lineTo(line.p2.x, line.p2.y);
-                ctx.strokeStyle = "#D9D9D9"; // Белые линии
-                ctx.lineWidth = line.opacity * 1.2; // Чуть тоньше
+                ctx.strokeStyle = "#D9D9D9"; 
+                ctx.lineWidth = line.opacity * 1.2; 
                 ctx.stroke();
                 ctx.closePath();
             });
